@@ -115,4 +115,15 @@ main section h1{
   padding: 10px;
 }
 
-
+.list ul li:first-child{
+  list-style-type: " \f007";
+}
+.list ul li:nth-child(2){
+  list-style-type: " \f07b";
+}
+.list ul li:last-child{
+  list-style-type: " \f1e0";
+}
+.list.second ul li{
+  list-style-type: " \2714";
+}
