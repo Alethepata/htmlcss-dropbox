@@ -9,8 +9,13 @@ body{
   font-size: 14px;
 }
 .topbar{
+  height: 60px;
   width: 100%;
   justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  
+
 }
 .debug{
   background-color: red;
@@ -21,10 +26,16 @@ body{
   display: flex;
 }
 .container{
-  width: 90%;
+   margin: 0 auto;  
+   width: 90%;  
+   padding-top: 120px;
+}
+
+.first.container{
   max-width: 850px;
-  margin: 0 auto;
-  padding-top: 50px;
+}
+.second.container{
+  max-width: 750px;
 }
 .margin{
   margin: 30px 0;
@@ -39,6 +50,19 @@ body{
 .bg-color{
   background-color: #b4d0e7;
 }
+.color-blue{
+  color: #0061ff;
+}
+.color-gray{
+  color: #d0d0d3;
+}
+.border-gray{
+  border: 1px solid #d0d0d3;
+
+}  
+.padding{
+    padding: 30px;
+  }
 /* Header */
 
 .topbar-right nav ul{
@@ -75,3 +99,20 @@ a{
 .jumbotron .image img{
   height: 300px;
 }
+
+/* main */
+main span{
+  margin: 40px;
+}
+main section h1{
+  font-size: 30px;
+}
+.card{
+  width: 35%
+}
+.card-header{
+  border-bottom: 1px solid #d0d0d3;
+  padding: 10px;
+}
+
+
