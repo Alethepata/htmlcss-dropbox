@@ -32,10 +32,10 @@ body{
 }
 
 .first.container{
-  max-width: 850px;
+  max-width: 12000px;
 }
 .second.container{
-  max-width: 750px;
+  max-width: 1000px;
 }
 .margin{
   margin: 30px 0;
@@ -56,13 +56,11 @@ body{
 .color-gray{
   color: #d0d0d3;
 }
-.border-gray{
-  border: 1px solid #d0d0d3;
 
-}  
 .padding{
-    padding: 30px;
+    padding: 50px;
   }
+
 /* Header */
 
 .topbar-right nav ul{
@@ -101,29 +99,60 @@ a{
 }
 
 /* main */
-main span{
+ .points span{
   margin: 40px;
 }
 main section h1{
   font-size: 30px;
 }
-.card{
-  width: 35%
+.card,.card:last-child .card-main{
+  justify-content: space-between;
+  
 }
+.border-gray{
+  border: 1px solid #d0d0d3;
+  width: 30%;
+}  
 .card-header{
   border-bottom: 1px solid #d0d0d3;
   padding: 10px;
 }
+.card h4{
+  padding: 50px 50px 20px 50px;
+}
 
-.list ul li:first-child{
-  list-style-type: " \f007";
+.list.second{
+  padding:0 50px;
 }
-.list ul li:nth-child(2){
-  list-style-type: " \f07b";
+.card ul li{
+  font-family: 'Font Awesone 6 free';
 }
-.list ul li:last-child{
-  list-style-type: " \f1e0";
+
+.list ul li::before{
+  content: " \f007";
 }
-.list.second ul li{
-  list-style-type: " \2714";
+.list ul li:nth-child::before{
+  content: " \f07b";
 }
+.list ul li:last-child::before{
+  content: " \f1e0";
+}
+.list.second ul li::before{
+  content: " \2714";
+  color: #0061ff;
+}
+.card:last-child{
+  margin-top: 50px;
+}
+.card:last-child .border-gray:last-child{
+  width: 100%;
+}
+
+.card:last-child .card-main{
+  justify-content: space-between;
+}
+.card:last-child .card-main h3{
+  margin: 30px 0 80px 0;
+  
+}
+
