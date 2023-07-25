@@ -19,9 +19,16 @@ body{
 }
 .debug{
   background-color: red;
-  border: 1px solid black;
+  border: 5px solid black;
   width: 100%;
+  height: 400px;
 }
+.debug2{
+  background-color: yellow;
+  border: 1px solid black;
+  width: 50%;
+}
+
 .flex{
   display: flex;
 }
@@ -178,4 +185,57 @@ section:nth-child(2) .btn{
 }
 section:nth-child(4) h1{
   margin: 80px 0 40px 0;
+}
+section:nth-child(5) {
+  margin: 100px 0;
+}
+.text-area,.square{
+  width: 100% ;
+}
+.square-content{
+  width: 50%;
+  border: 1px solid black;
+}
+.text-area{
+  padding: 50px;
+  font-size: 14px;
+  background-color: #f0efef;
+}
+.text-area img{
+  height: 80px;
+}
+.text-area p{
+  margin:30px 0 50px 0 ;
+}
+.square-content{
+  position: relative;
+}
+.square-content .image{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+.square-content img{
+  height: 40px ;
+}
+.square:first-child .square-content:nth-child(2) img{
+  height: 100px ;
+}
+.square:first-child .square-content:nth-child(3) img{
+  height: 30px ;
+}
+.square:first-child .square-content:nth-child(4) img{
+  height: 50px ;
+}
+
+.square:last-child .square-content:nth-child(2) img{
+  height: 15px ;
+}
+.square:last-child .square-content:nth-child(3) img{
+  height: 70px ;
+}
+.square:last-child .square-content:nth-child(4) img{
+  height: 80px ;
 }
