@@ -82,7 +82,7 @@ body{
 li{
   list-style: none; 
 }
-a{
+nav a, .botton a {
   text-decoration: none;
   color: black;
 }
@@ -93,7 +93,7 @@ a{
 .jumbotron span{
   display: block;
 }
-#arrow{
+.arrow{
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -175,4 +175,7 @@ section:nth-child(2) .btn{
 
 .column img{
   height: 200px;
+}
+section:nth-child(4) h1{
+  margin: 80px 0 40px 0;
 }
