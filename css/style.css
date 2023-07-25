@@ -56,6 +56,9 @@ body{
 .color-gray{
   color: #d0d0d3;
 }
+.wrap{
+  flex-wrap: wrap;
+}
 
 .padding{
     padding: 50px;
@@ -164,4 +167,12 @@ section:nth-child(2) p{
 }
 section:nth-child(2) .btn{
   border: 1px solid black;
+}
+.column{
+  width: 30%;
+  margin-top: 40px;
+}
+
+.column img{
+  height: 200px;
 }
