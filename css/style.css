@@ -90,6 +90,7 @@ body{
   }
 
 /* Header */
+
 .topbar{
   height: 60px;
   width: 100%;
@@ -134,8 +135,17 @@ nav a, .botton a {
   margin-bottom: 10px;
 }
 .jumbotron .image img{
-  height: 300px;
+  height: 450px;
 }
+.jumbotron-content{
+ position: relative;
+}
+.jumbotron .image{
+ position: absolute;
+ top:-30px;
+ left: 350px;
+}
+
 
 /* main */
 /* SECTION 1 */
