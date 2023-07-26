@@ -50,6 +50,7 @@ body{
 }
 .btn{
  padding: 5px 15px;
+ display: inline-block;
 }
 .btn.blue{
   background-color: #0061ff ;
@@ -57,6 +58,9 @@ body{
 }
 .btn.white{
   background-color: white ;
+}
+.btn:hover{
+  opacity: 0.5;
 }
 .bg-color{
   background-color: #b4d0e7;
@@ -66,6 +70,33 @@ body{
 }
 .color-gray{
   color: #d0d0d3;
+}
+.bg-light-green{
+  background-color: #a2d39b;
+}
+.bg-bordeaux{
+  background-color: #61082b;
+}
+.bg-light-blue{
+  background-color: #0093ce;
+}
+.bg-light-red{
+  background-color: #ff1c1c;
+}
+.bg-red{
+  background-color: #d5001f;
+}
+.bg-dark-blue{
+  background-color: #0d2481;
+}
+.bg-yellow{
+  background-color: #ffd830;
+}
+.border-bottom{
+  border-bottom: 1px solid #d0d0d3;
+  width: 30%;
+
+
 }
 .wrap{
   flex-wrap: wrap;
@@ -184,21 +215,23 @@ section:nth-child(3) .column{
   margin-top: 40px;
 }
 
-section:nth-child(3).column img{
+section:nth-child(3) .column img{
   height: 200px;
 }
 section:nth-child(4) h1{
   margin: 80px 0 40px 0;
 }
+
+/* SECTION 5 */
+
 section:nth-child(5) {
   margin-top: 100px;
 }
 .text-area,.square{
-  width: 100% ;
+  width: 100%;
 }
 .square-content{
-  width: 50%;
-  border: 1px solid black;
+  width: 50%
 }
 .text-area{
   padding: 50px;
@@ -207,8 +240,12 @@ section:nth-child(5) {
 }
 .text-area img{
   height: 80px;
+  margin-bottom: 30px;
 }
-.text-area p{
+.text-area .text-content{
+  overflow: auto;
+}
+.text-area .text-content p{
   margin:30px 0 50px 0 ;
 }
 .square-content{
@@ -223,6 +260,7 @@ section:nth-child(5) {
 }
 .square-content img{
   height: 40px ;
+  filter: invert(1);
 }
 .square:first-child .square-content:nth-child(2) img{
   height: 100px ;
@@ -243,11 +281,17 @@ section:nth-child(5) {
 .square:last-child .square-content:nth-child(4) img{
   height: 80px ;
 }
+
+/* SECTION 6 */
+
 section:nth-child(6){
  padding-bottom: 120px;
 }
 section:nth-child(6) h1{
  color: #61082b;
+}
+section:nth-child(7){
+  margin-bottom: 100px;
 }
 section:nth-child(7) h1{
  margin-bottom: 50px;
@@ -270,9 +314,11 @@ footer,footer .column a{
 footer .column:first-child{
   border-bottom: 1px solid #d0d0d3;
 }
+
 footer li{
   margin: 30px 0 ;
 }
 footer li:last-child{
-  margin-bottom:200px ;
+    margin-bottom:200px ;
 }
+
