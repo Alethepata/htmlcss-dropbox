@@ -15,21 +15,7 @@ body{
   position: fixed;
   z-index: 999;
   background-color: white;
-  
-
 }
-.debug{
-  background-color: red;
-  border: 5px solid black;
-  width: 100%;
-  height: 400px;
-}
-.debug2{
-  background-color: yellow;
-  border: 1px solid black;
-  width: 50%;
-}
-
 .flex{
   display: flex;
 }
@@ -71,6 +57,9 @@ body{
 .color-gray{
   color: #d0d0d3;
 }
+.color-dark-gray{
+  color: darkgrey;
+}
 .bg-light-green{
   background-color: #a2d39b;
 }
@@ -95,19 +84,19 @@ body{
 .border-bottom{
   border-bottom: 1px solid #d0d0d3;
   width: 30%;
-
-
 }
 .wrap{
   flex-wrap: wrap;
 }
+.card-header{
+  text-align: center;
+}
 
 .padding{
-    padding: 50px;
+    padding: 0 50px 50px 50px;
   }
 
 /* Header */
-
 .topbar-right nav ul{
   justify-content: flex-end;
 }
@@ -144,11 +133,15 @@ nav a, .botton a {
 }
 
 /* main */
- .points span{
+/* SECTION 1 */
+
+.points span{
   margin: 40px;
 }
 main section h1{
   font-size: 30px;
+  margin-top: 30px;  
+  margin-bottom: 10px;
 }
 .space-between{
   justify-content: space-between;
@@ -161,30 +154,28 @@ main section h1{
 .card-header{
   border-bottom: 1px solid #d0d0d3;
   padding: 10px;
+
 }
 .card h4{
   padding: 50px 50px 20px 50px;
 }
 
+.text-card-main span:last-child{
+  display: block;
+  margin-top: 10px;
+}
+
 .list.second{
   padding:0 50px;
 }
-.card ul li{
-  font-family: 'Font Awesone 6 free';
+.list li{
+ margin: 10px;
 }
-
-.list ul li::before{
-  content: " \f007";
-}
-.list ul li:nth-child::before{
-  content: " \f07b";
-}
-.list ul li:last-child::before{
-  content: " \f1e0";
-}
-.list.second ul li::before{
-  content: " \2714";
+.list.second .fa-li{
   color: #0061ff;
+}
+.card-main:nth-child(2) .list.second{
+  margin-bottom: 100px;
 }
 .card:last-child{
   margin-top: 50px;
@@ -192,7 +183,6 @@ main section h1{
 .card:last-child .border-gray:last-child{
   width: 100%;
 }
-
 .card:last-child .card-main{
   justify-content: space-between;
 }
@@ -200,6 +190,9 @@ main section h1{
   margin: 30px 0 80px 0;
   
 }
+
+/* SECTION 2 */
+
 section:nth-child(2) img{
   height: 430px;
   margin-right: 50px;
@@ -210,6 +203,9 @@ section:nth-child(2) p{
 section:nth-child(2) .btn{
   border: 1px solid black;
 }
+
+/* SECTION 3 */
+
 section:nth-child(3) .column{
   width: 30%;
   margin-top: 40px;
@@ -218,6 +214,9 @@ section:nth-child(3) .column{
 section:nth-child(3) .column img{
   height: 200px;
 }
+
+/* SECTION 4 */
+
 section:nth-child(4) h1{
   margin: 80px 0 40px 0;
 }
