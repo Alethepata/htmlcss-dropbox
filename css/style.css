@@ -8,14 +8,7 @@ body{
   font-weight: 500;
   font-size: 14px;
 }
-.topbar{
-  height: 60px;
-  width: 100%;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 999;
-  background-color: white;
-}
+
 .flex{
   display: flex;
 }
@@ -97,6 +90,18 @@ body{
   }
 
 /* Header */
+.topbar{
+  height: 60px;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+}
+header li:hover{
+border-bottom: 1px solid black;
+height: 40px;
+}
 .topbar-right nav ul{
   justify-content: flex-end;
 }
